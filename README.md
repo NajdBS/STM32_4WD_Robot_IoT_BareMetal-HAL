@@ -1,5 +1,11 @@
 ## 📚 Overview
-This project reimplements the 4WD Robot system using STM32 HAL, focusing on modular sensor acquisition and cloud integration. Sensor data is collected using ADC in DMA mode for efficient analog signal sampling, and temperature data is read via I2C from the DS1621 digital temperature sensor. Wi-Fi communication is handled by an ESP8266 module to upload sensor data to the cloud (ThingSpeak) and enable remote monitoring through a web interface. This version is a continuation of a previous full bare-metal implementation that included BLE-based robot control.
+This repository contains two implementations of a 4WD Robot system using the STM32F407VG microcontroller: one using **bare-metal programming (direct register access)** and another using the **STM32 HAL** framework.
+
+The system includes modular sensor acquisition and cloud connectivity:
+- **Sensor data** is acquired using the **ADC in DMA mode** for efficient analog signal sampling.
+- **Temperature readings** are obtained via **I2C communication** from a **DS1621** digital temperature sensor.
+- **Wi-Fi communication** is handled by an **ESP8266 module**, enabling **cloud upload (ThingSpeak)** and **web-based monitoring**.
+
 - **Microcontroller Board:** STM32F407VG Discovery  
 - **Development Approach:** Hybrid  
   - **Bare-Metal Version:** Complete implementation (BLE control, cloud and local web server communication)  
