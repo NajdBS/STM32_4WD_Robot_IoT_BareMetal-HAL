@@ -1,6 +1,10 @@
 ## 📚 Overview
 This repository contains two implementations of a 4WD Robot system using the STM32F407VG microcontroller: one using **bare-metal programming (direct register access)** and another using the **STM32 HAL** framework.
 
+<p align="center">
+  <img src="Project.png" alt="4WD" width="700">
+</p>
+
 The system includes modular sensor acquisition and cloud connectivity:
 - Sensor data is acquired using the **ADC in DMA mode** for efficient analog signal sampling.
 - Temperature readings are obtained via **I2C communication** from a **DS1621** digital temperature sensor.
